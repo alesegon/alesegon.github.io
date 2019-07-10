@@ -1,0 +1,541 @@
+
+/* ---- reset ----*/
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    line-height: 1.15;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    background-color: white;
+}
+
+main {
+    display: block;
+}
+
+figure {
+    display: block;
+    background-color: white;
+}
+
+caption {
+    display: block;
+    background-color: white;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+
+.videofullwidth {
+    width: 100%;
+}
+
+.imagefullwidth {
+    position: static;
+    margin: 0;
+}
+
+.imagefullwidthbackground {
+    margin: 0;
+    background-color: white;
+}
+
+.third {
+    width: 100%;
+}
+
+.half {
+    width: 100%;
+}
+
+.thirdimage {
+    margin: 0 1px 0 1px;
+}
+
+.imagehalf {
+    margin: 0 1px 0 1px;
+}
+
+.imagehalf .twoimages .maininfo {
+    width: 30%;
+    height: 30%;
+}
+
+.headerimage {
+    position: static;
+    margin: 50px 0 0 0;
+    padding-bottom: 10%;
+    background-color: white;
+}
+
+.headerimage figure {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.details {
+    background-color: white;
+    color: black;
+}
+
+.detailsboxed {
+    margin: 0 auto;
+    max-width: 1290px;
+    width: 90%;
+}
+
+.detailsboxedcategory {
+    font-family: "IBMPlexMono-Light";
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: .05em;
+    margin-left: 80px;
+    text-transform: uppercase;
+}
+
+.detailsboxedheading {
+    margin-bottom: 35px;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-top: -5px;
+}
+
+.detailsboxedtext {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding-bottom: 5%;
+}
+
+.maintext {
+    margin-right: 6%;
+    width: 50%;
+}
+
+.secondarytext {
+    margin-right: 5%;
+    width: 24%;
+}
+
+.tertiarytext {
+    margin-right: 0%;
+    width: 14%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+aside {
+    display: block;
+    font-family: "IBMPlexMono-Light";
+    font-size: 50px;
+    font-weight: 300;
+    padding: 120px 0 120px 0;
+    text-align: center;
+}
+
+/* ---- typography ----*/
+
+body {
+    height: 100vh;
+}
+
+section {
+    /* background-image: url(photos/circle.png);*/
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: white;
+    margin: -10px;
+}
+
+header {
+    left: 0;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    z-index: 10;
+}
+
+nav header {
+    block-size: inherit;
+    height: 50%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin-top: 0;
+    /*position: fixed;*/
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    /*padding-top:30%;*/
+    z-index: 10;
+    padding-left: 5%;
+}
+
+section ul li {
+    font-size: 2em;
+    font-family:"IBMPlexMono-Light";
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2%;
+}
+
+h1 {
+    font-family: "IBMPlexMono-Light";
+    font-size: 1em;
+    display: inline;
+    opacity: 50%;
+}
+
+h2 {
+    font-family: "IBMPlexMono-Medium";
+}
+
+h3 {
+    font-family: "IBMPlexMono-Light";
+}
+
+p {
+    font-family: "IBMPlexSans-Light";
+    line-height: 1.5em;
+}
+
+.imagecaption {
+    font-family: "IBMPlexMono-Light";
+    font-size: 0.6em;
+    padding-bottom: 10px;
+    max-width: 500px;
+}
+
+.imagecaption .imagethird {
+    background-color: white;
+}
+
+.content1 {
+    background-color: #272727;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.content2 {
+    background-color: white;
+    color: black;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.contentboxed {
+    margin: 0 auto;
+    max-width: 745px;
+    width: 90%;
+}
+
+.textandimage {
+    background-color: white;
+    padding: 80px 0 80px 0;
+}
+
+.textandimageboxed {
+    margin: 0 auto 0 auto;
+    max-width: 1290px;
+    width: 90%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.twoimages {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.threeimages {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.textthird {
+    width: 23%;
+}
+
+.imagethird {
+    width: 72%;
+}
+
+
+.info {
+    font-size: 0.3em;
+    border: solid;
+    border-width: 1px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+a {
+    opacity: 50%;
+    color: #2D2D2D;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+section ul li:link {
+    color: black;
+    text-decoration: none;
+}
+
+section ul li:visited {
+    color: black;
+    text-decoration: none;
+}
+
+section ul li::after {
+    /*content: "/";*/
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+section ul li:last-child::after {
+    content: "";
+}
+
+ul {
+    list-style: none;
+}
+
+.links {
+    display: flex;
+    align-content: center;
+    height: 82vh;
+}
+
+.menu {
+    padding-top: 40px;
+    padding-right: 40px;
+    font-family: "IBMPlexMono-Light";
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "IBM-Plex-Mono";
+    src: url(fonts/IBM-Plex-Mono/IBMPlexMono-Bold.otf);
+    src: url(fonts/IBM-Plex-Mono/IBMPlexMono-BoldItalic.otf);
+    src: url(fonts/IBM-Plex-Mono/IBMPlexMono-ExtraLight.otf);
+    src: url(fonts/IBM-Plex-Mono/IBMPlexMono-ExtraLightItalic.otf);
+    src: url(fonts/IBM-Plex-Mono/IBMPlexMono-Italic.otf);
+    src: url(fonts/IBM-Plex-Mono/IBMPlexMono-Light.otf);
+    src: url(fonts/IBM-Plex-Mono/IBMPlexMono-LightItalic.otf);
+    src: url(fonts/IBM-Plex-Mono/IBMPlexMono-Medium.otf);
+    src: url(fonts/IBM-Plex-Mono/IBMPlexMono-MediumItalic.otf);
+    src: url(fonts/IBM-Plex-Mono/IBMPlexMono-Regular.otf);
+    src: url(fonts/IBM-Plex-Mono/IBMPlexMono-SemiBold.otf);
+    src: url(fonts/IBM-Plex-Mono/IBMPlexMono-SemiBoldItalic.otf);
+    src: url(fonts/IBM-Plex-Mono/IBMPlexMono-Text.otf);
+    src: url(fonts/IBM-Plex-Mono/IBMPlexMono-TextItalic.otf);
+    src: url(fonts/IBM-Plex-Mono/IBMPlexMono-Thin.otf);
+    src: url(fonts/IBM-Plex-Mono/IBMPlexMono-ThinItalic.otf);
+}
+
+@font-face {
+    font-family: "IBM-Plex-Sans";
+    src: url(css/fonts/IBM-Plex-Sans/IBMPlexSans-Bold.otf);
+    src: url(css/fonts/IBM-Plex-Sans/IBMPlexSans-BoldItalic.otf);
+    src: url(css/fonts/IBM-Plex-Sans/IBMPlexSans-ExtraLight.otf);
+    src: url(css/fonts/IBM-Plex-Sans/IBMPlexSans-ExtraLightItalic.otf);
+    src: url(css/fonts/IBM-Plex-Sans/IBMPlexSans-Italic.otf);
+    src: url(css/fonts/IBM-Plex-Sans/IBMPlexSans-Light.otf);
+    src: url(css/fonts/IBM-Plex-Sans/IBMPlexSans-LightItalic.otf);
+    src: url(css/fonts/IBM-Plex-Sans/IBMPlexSans-Medium.otf);
+    src: url(css/fonts/IBM-Plex-Sans/IBMPlexSans-MediumItalic.otf);
+    src: url(css/fonts/IBM-Plex-Sans/IBMPlexSans-Regular.otf);
+    src: url(css/fonts/IBM-Plex-Sans/IBMPlexSans-SemiBold.otf);
+    src: url(css/fonts/IBM-Plex-Sans/IBMPlexSans-SemiBoldItalic.otf);
+    src: url(css/fonts/IBM-Plex-Sans/IBMPlexSans-Text.otf);
+    src: url(css/fonts/IBM-Plex-Sans/IBMPlexSans-TextItalic.otf);
+    src: url(css/fonts/IBM-Plex-Sans/IBMPlexSans-Thin.otf);
+    src: url(css/fonts/IBM-Plex-Sans/IBMPlexSans-ThinItalic.otf);
+}
+
+.logo {
+    padding-top: 0%;
+    padding-left: 20px;
+    height: 200%;
+}
+
+footer {
+    position: fixed;
+    left:20px;
+    padding-right: 20px;
+    bottom:30px;
+    height:30px;
+    width:100%;
+}
+
+footer ul li {
+    font-family: "brandon grotesque", sans-serif;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    font-style: italic;
+    border-bottom: none;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav ul li img{
+    width: 30px;
+    height: 30px;
+}
+
+footer nav ul li:after{
+    content: "";
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 375px) {
+
+.headerimage {
+    width: 100%;
+    padding: 70px 0px 70px 0px;
+}
+
+.detailsboxedtext {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+
+.threeimages {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.twoimages {
+    padding: 0;
+}
+
+.half {
+    width: 90%;
+}
+
+section {
+    padding-left: 12px;
+}
+
+.detailsboxedcategory {
+    margin-left: 50px;
+    font-size: 35px;
+}
+
+.detailsboxedheading {
+    line-height: 1;
+    margin-top: 10px;
+    font-size: 55px;
+}
+
+.maintext, .secondarytext, .tertiarytext {
+    width: 90%
+}
+
+.imagecaption {
+    margin-left: 15px;
+}
+
+.content1 {
+    padding: 30px;
+}
+
+.content2 {
+    padding: 30px; 
+}
+
+.contentboxed {
+    width: 80%;
+    align-content: center;
+}
+
+.textandimage {
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+
+.textandimageboxed {
+    flex-direction: column;
+}
+
+.textthird {
+    width: 80%
+}
+
+.imagethird {
+    width: 100%;
+}
+
+.third {
+    width: 97%;
+}
+
+aside {
+    font-size: 30px;
+    padding: 50px 0 50px 0;
+}
+
+.imagehalf {
+    margin: 0;
+}
+
+.videofullwidth {
+    width: 100%;
+}
+
+}
